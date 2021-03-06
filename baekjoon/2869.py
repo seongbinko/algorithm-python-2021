@@ -23,18 +23,21 @@
 # 100 99 1000000000
 # 예제 출력 3 
 # 999999901
+                                    # while v > x:
+                                    #     if a == v:
+                                    #         break
+                                    #     if x + a >= v:
+                                    #         break
+                                    #     else:
+                                    #         x = x + a - b
+                                    #         day += 1
 
 a,b,v = map(int,input().split())
 
 day = 1
-x = 0
 
-while v > x:
-    if a == v:
-        break
-    if x + a >= v:
-        break
-    else:
-        x = x + a - b
-        day += 1
+v = v - a
+
+if v > 0:
+    day += v % (a-b) == 0 and v // (a-b) or v // (a-b) + 1
 print(day)

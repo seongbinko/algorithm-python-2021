@@ -59,17 +59,23 @@
                                         #     if(n > 10000):
                                         #         break
 
-num =  [False] * 10001 #셀프넘버
+num =  [False] * 100001 #셀프넘버
 
 
 def selfNumCheck(n):
     notTotalNum = n # 33  + 3 + 3 39
     while n != 0:
-        notTotalNum += n % 
-        n = n /10
+        notTotalNum += n % 10
+        n = n // 10
+    
     return notTotalNum
 
-for i in range(1,10001,1):
+for i in range(0,10000,1):
     idx = selfNumCheck(i)
-    num[idx] = True
+    if idx <= 10000:
+        num[idx] = True
+for i in range(0,10000,1):
+    if(num[i] != True):
+        print(i)
+
 
