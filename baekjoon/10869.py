@@ -15,5 +15,5 @@ b = int(b)
 print(a+b)
 print(a-b)
 print(a*b)
-print(int(a/b))
+print(int(a/b)) # a // b
 print(a%b)

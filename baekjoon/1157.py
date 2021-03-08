@@ -30,7 +30,7 @@
 text = input() #'Missisipi'
 upperText = text.upper()
 
-uniqueWord = list(set(upperText))
+uniqueWord = list(set(upperText)) #셋 자료형을 이용해 글자수값을 찾기 위한 중복되지 않은 알파벳을 받는 것이 포인트
 
 wordCount = []
 answer = ''

@@ -28,6 +28,6 @@ for i in b:
 
 total = 0
 for j in arr:
-    sum = total + int(j)
+    total = total + int(j)
 print(total)
 

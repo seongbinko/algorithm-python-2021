@@ -23,7 +23,7 @@ import math
 
 m,n = map(int, input().split())
 
-array = [True for i in range(n+1)]
+array = [True for i in range(n+1)] #[True] * n+1
 array[0] = False
 array[1] = False
 

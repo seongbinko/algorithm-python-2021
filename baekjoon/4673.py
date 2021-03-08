@@ -60,8 +60,6 @@
                                         #         break
 
 num =  [False] * 100001 #셀프넘버
-
-
 def selfNumCheck(n):
     notTotalNum = n # 33  + 3 + 3 39
     while n != 0:
@@ -72,7 +70,7 @@ def selfNumCheck(n):
 
 for i in range(0,10000,1):
     idx = selfNumCheck(i)
-    if idx <= 10000:
+    if idx <= 10000:        #idx가 10000을 넘어가서 오류가 낫었다.
         num[idx] = True
 for i in range(0,10000,1):
     if(num[i] != True):
