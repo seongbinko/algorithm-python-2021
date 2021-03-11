@@ -74,9 +74,3 @@ for _ in range(case):
     n = int(input())
     result = fibonacci(n)
     print(result[0], result[1])
-    
-
-
-
-
-
