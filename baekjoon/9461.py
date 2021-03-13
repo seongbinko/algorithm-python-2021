@@ -1,3 +1,5 @@
+# 9:16 ~ 9:32
+# 파도반 수열
 T = int(input())
 
 for _ in range(T):
